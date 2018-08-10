@@ -68,17 +68,17 @@ def arrange_data_by_class(root_path=ROOT_PATH, course_path=COURSE_PATH, module_p
         actions.append(act)
         ftab_col.append(act)    
 
-    #Make ftab with collums Name, Grades and Actions
+    #Make ftab with columns Name, Grades and Actions
     ftab = pd.DataFrame(columns=ftab_col)
     ftab["Name"] = grades["First name"] + " " + grades["Surname"]
-    if "Média Final" in grades.columns: #Verify if there is "Média Final" collumn
+    if "Média Final" in grades.columns: #Verify if there is "Média Final" column
         ftab["Grades"] = grades ["Média Final"]    
-    elif "Course total" in grades.columns: #Verify if there is "Course Total" collumn
+    elif "Course total" in grades.columns: #Verify if there is "Course Total" column
         ftab["Grades"] = grades ["Course total"]
     else:
         print ("Without grades in ", logs_path)
     
-    #Assign columns actions with frequancy of each user
+    #Assign columns actions with frequency of each user
     for name in ftab["Name"].unique(): #Take names
         df_aux_name = df_logs.loc[df_logs["Name"] == name] #select actions logs grouped by user name
         for act in actions: #Assign to ftab the frequency of actions for each user       
@@ -113,8 +113,8 @@ def arrange_data_by_module(root_path=ROOT_PATH, course_path=COURSE_PATH, module_
             input_path.append(os.path.join(dataset_path,classes_folders[i],INPUT_PATH))
     
     for i in range(0,len(input_path)): #Get all input files        
-        if not os.path.exists(input_path[i]): #Verify if there is input file
-            arrange_data_by_class(files_path[i]) #Otherwise, generate input file
+        if not os.path.exists(input_path[i]): #Verify if there is a input file
+            arrange_data_by_class(files_path[i]) #Otherwise, generate a input file
     
         lInput.append(load_input_data(files_path[i])) #Add into list each input
         class_path = "Turma_Unica"
@@ -148,7 +148,7 @@ def arrange_data_by_module(root_path=ROOT_PATH, course_path=COURSE_PATH, module_
 def arrange_data_by_course(root_path=ROOT_PATH, course_path=COURSE_PATH):
     print(course_path)
     print ("checking files...")
-    if not check_course(root_path,course_path): #Verify if there are logs and grandes in all the modules
+    if not check_course(root_path,course_path): #Verify if there are logs and grades in all the modules
         return
     
     dataset_path = os.path.join(root_path, course_path)    
@@ -168,8 +168,8 @@ def arrange_data_by_course(root_path=ROOT_PATH, course_path=COURSE_PATH):
 
     for i in range(0,len(input_path)): #Get all input files
         print(module_folders[i])
-        if not os.path.exists(input_path[i]): #Verify if there is input file
-            arrange_data_by_module(module_path[i]) #Otherwise, generate input file
+        if not os.path.exists(input_path[i]): #Verify if there is a input file
+            arrange_data_by_module(module_path[i]) #Otherwise, generate a input file
         
         lInput.append(load_input_data(module_path[i])) #Add into list each input        
         lInput[i].insert(loc=0,column="Module",value=module_folders[i]) #Add into the list a column to assign a class
