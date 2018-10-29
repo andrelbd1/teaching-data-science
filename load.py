@@ -243,3 +243,20 @@ def check_course(root_path=ROOT_PATH, course_path=COURSE_PATH):
         classes_folders.clear()
 
     return True
+
+def fix_data(root_path=ROOT_PATH, course_path=COURSE_PATH, module_path=MODULE_PATH, path=None):    
+    dataset_path = path
+    if path is None:
+        dataset_path = os.path.join(root_path,course_path,module_path)
+
+    logs_path = os.path.join(dataset_path,LOGS_PATH)
+    if not os.path.exists(logs_path):
+        print ("Without logs in ",dataset_path)
+        return
+
+    logs = load_logs_data(dataset_path)
+    print (dataset_path)
+
+    return logs
+
+    
