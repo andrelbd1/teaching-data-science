@@ -18,7 +18,7 @@
     
 - [06. Statistical Analysis](https://htmlpreview.github.io/?https://github.com/andrelbd1/teaching-data-science/blob/master/06.%20Statistical%20Analysis.html)
     
-- [07. Data Normalization and Standardization](https://htmlpreview.github.io/?https://github.com/andrelbd1/teaching-data-science/blob/master/07.%20Data%20Normalization%20and%20Standardization.html)
+- [07. Data Normalization and Standardization](https://github.com/andrelbd1/teaching-data-science/blob/master/07.%20Data%20Normalization%20and%20Standardization.ipynb)
     
 - [08. Data Cleaning](https://htmlpreview.github.io/?https://github.com/andrelbd1/teaching-data-science/blob/master/08.%20Data%20Cleaning.html)
     
