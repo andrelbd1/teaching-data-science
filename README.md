@@ -27,3 +27,5 @@
 - [10. Practice - IMDb](https://htmlpreview.github.io/?https://github.com/andrelbd1/teaching-data-science/blob/master/10.%20Practice%20-%20IMDb.html)
     
 - [11. Practice - Consumers Complaints](https://htmlpreview.github.io/?https://github.com/andrelbd1/teaching-data-science/blob/master/11.%20Practice%20-%20Consumers%20Complaints.html)
+
+- [12. Practice - Time Series Forecasting using Decision Tree and Gradient Boosting](https://htmlpreview.github.io/?https://github.com/andrelbd1/teaching-data-science/blob/master/12.%20Practice%20-%20Time%20Series%20Forecasting%20using%20Decision%20Tree%20and%20Gradient%20Boosting.html)
