@@ -29,3 +29,17 @@
 - [11. Practice - Consumers Complaints](https://htmlpreview.github.io/?https://github.com/andrelbd1/teaching-data-science/blob/master/11.%20Practice%20-%20Consumers%20Complaints.html)
 
 - [12. Practice - Time Series Forecasting using Decision Tree and Gradient Boosting](https://htmlpreview.github.io/?https://github.com/andrelbd1/teaching-data-science/blob/master/12.%20Practice%20-%20Time%20Series%20Forecasting%20using%20Decision%20Tree%20and%20Gradient%20Boosting.html)
+
+### Data Visualization:
+
+- [Why visualize data?](http://www.youtube.com/watch?v=Rmdz8dzWfU8)
+  
+- [Data visualization History](https://www.youtube.com/watch?v=1Z2qTAKyz7E)
+
+- [Communicating Evidence](https://www.youtube.com/watch?v=hh1f-ZLKwGs)
+
+- [Using Text and Tables](https://www.youtube.com/watch?v=zHP5jsoLXrQ)
+
+- [Using Bar, Line, and ~Pizza~](https://www.youtube.com/watch?v=2YRDaBz9vtY)
+
+- [Using Bubbles](https://www.youtube.com/watch?v=iNZjTOAkhzo)
