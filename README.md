@@ -43,3 +43,6 @@
 - [Using Bar, Line, and ~Pizza~](https://www.youtube.com/watch?v=2YRDaBz9vtY)
 
 - [Using Bubbles](https://www.youtube.com/watch?v=iNZjTOAkhzo)
+
+- [Communicating Evidence pt2](https://www.youtube.com/watch?v=kGJaiS_yxl4)
+
