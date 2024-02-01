@@ -56,3 +56,5 @@ Data Visualization:
 
 - [Communicating Evidence pt2](https://www.youtube.com/watch?v=kGJaiS_yxl4)
 
+- [Improving Visualization](https://www.youtube.com/watch?v=F1h1w-e03TE)
+
