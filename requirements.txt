@@ -1,0 +1,10 @@
+pandas==1.4.3
+Jinja2==3.0.2
+itsdangerous==2.0.1
+statsmodels==0.13.2
+XlsxWriter==3.1.9
+openpyxl==3.1.2
+matplotlib==3.3.4
+seaborn==0.13.0
+scikit-learn==0.24.1
+ipykernel==6.27.1

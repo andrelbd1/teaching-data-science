@@ -3,8 +3,17 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/andrelbd1/teaching-data-science.svg)](https://github.com/andrelbd1/teaching-data-science) 
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/andrelbd1/teaching-data-science.svg)](https://github.com/andrelbd1/teaching-data-science) 
 
+Quick Setup
+-----------
+Create a virtualenv and install the requirements.
+````bash
+    virtualenv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+````
 
-### Hands on:
+Hands on:
+-----------
 
 - [01. Series, DataFrame and Reindex](https://htmlpreview.github.io/?https://github.com/andrelbd1/teaching-data-science/blob/master/01.%20Series%2C%20DataFrame%20and%20Reindex.html)
     
@@ -30,7 +39,8 @@
 
 - [12. Practice - Time Series Forecasting using Decision Tree and Gradient Boosting](https://htmlpreview.github.io/?https://github.com/andrelbd1/teaching-data-science/blob/master/12.%20Practice%20-%20Time%20Series%20Forecasting%20using%20Decision%20Tree%20and%20Gradient%20Boosting.html)
 
-### Data Visualization:
+Data Visualization:
+-----------
 
 - [Why visualize data?](http://www.youtube.com/watch?v=Rmdz8dzWfU8)
   
