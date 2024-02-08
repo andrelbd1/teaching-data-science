@@ -61,3 +61,5 @@ Data Visualization:
 - [Improving Visualization pt2](https://www.youtube.com/watch?v=KWcjjvN_1RQ)
 
 - [Using Colors](https://www.youtube.com/watch?v=JntkusEHKr0)
+
+- [Cheating with graphics](https://www.youtube.com/watch?v=1zqv2H-8DE4)
