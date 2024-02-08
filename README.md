@@ -42,7 +42,7 @@ Hands on:
 Data Visualization:
 -----------
 
-- [Why visualize data?](http://www.youtube.com/watch?v=Rmdz8dzWfU8)
+- [Why Visualize Data?](http://www.youtube.com/watch?v=Rmdz8dzWfU8)
   
 - [Data visualization History](https://www.youtube.com/watch?v=1Z2qTAKyz7E)
 
@@ -59,3 +59,5 @@ Data Visualization:
 - [Improving Visualization](https://www.youtube.com/watch?v=F1h1w-e03TE)
 
 - [Improving Visualization pt2](https://www.youtube.com/watch?v=KWcjjvN_1RQ)
+
+- [Using Colors](https://www.youtube.com/watch?v=JntkusEHKr0)
