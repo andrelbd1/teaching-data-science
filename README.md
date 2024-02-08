@@ -62,4 +62,6 @@ Data Visualization:
 
 - [Using Colors](https://www.youtube.com/watch?v=JntkusEHKr0)
 
-- [Cheating with graphics](https://www.youtube.com/watch?v=1zqv2H-8DE4)
+- [Cheating With Graphics](https://www.youtube.com/watch?v=1zqv2H-8DE4)
+
+- [Why We Should Tell a Story With Charts](https://www.youtube.com/watch?v=sWgFSAZUlAQ)
