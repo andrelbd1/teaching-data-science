@@ -58,3 +58,5 @@ Data Visualization:
 
 - [Improving Visualization](https://www.youtube.com/watch?v=F1h1w-e03TE)
 
+- [Improving Visualization pt2](https://www.youtube.com/watch?v=KWcjjvN_1RQ)
+- [Improving Visualization](https://www.youtube.com/watch?v=F1h1w-e03TE)
