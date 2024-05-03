@@ -50,7 +50,7 @@ Data Visualization:
 
 - [Using Text and Tables](https://www.youtube.com/watch?v=zHP5jsoLXrQ)
 
-- [Using Bar, Line, and ~Pizza~](https://www.youtube.com/watch?v=2YRDaBz9vtY)
+- [Using Bar, Line, and ~Pizza~](https://youtu.be/qitw933aiUc)
 
 - [Using Bubbles](https://www.youtube.com/watch?v=iNZjTOAkhzo)
 
