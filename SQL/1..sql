@@ -191,3 +191,12 @@ select e.*, d.department_id
 from employees e
     left join departments d on e.department_id = d.department_id
 where d.department_id is null;
+
+-- 25. Write a query to find the difference in days between two dates.
+select '2025-01-01' as start_date, '2025-02-10' as end_date,
+    cast('2025-02-10' as DATE) - cast('2025-01-01' as DATE) as days_diff;
+
+-- 26. Write a query to find the difference in months between two dates.
+select '2024-12-01' as start_date, '2025-05-10' as end_date,
+    EXTRACT(YEAR FROM AGE('2025-05-10', '2024-12-01')) * 12 +
+    EXTRACT(MONTH FROM AGE('2025-05-10', '2024-12-01')) AS months_diff;
