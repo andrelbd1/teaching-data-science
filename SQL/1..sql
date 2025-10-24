@@ -298,7 +298,41 @@ with sales_month as (
 select *
 from (
         select s.sales_date, s.id, s.name, s.total_sales,
-               row_number() over (partition by s.sales_date order by total_sales desc) as rank
+               rank() over (partition by s.sales_date order by total_sales desc) as rank
         from sales_month s
     ) sub
-where rank = 1;
+where rank <= 3;
+
+-- 33. Calculate the percentage change in sales compared to the previous month for each product.
+WITH months AS (
+    SELECT to_char(d, 'YYYY-MM') AS sale_month
+    FROM generate_series(
+        (SELECT MIN(sale_date) FROM sales),
+        (SELECT MAX(sale_date) FROM sales),
+        interval '1 month'
+    ) AS d
+),
+all_combinations as (
+    select p.product_id, m.sale_month
+    from products p
+        cross join months m
+),
+all_sales as (
+    select s.product_id, to_char(s.sale_date, 'YYYY-MM') as sale_month, sum(amount*quantity) as total_sales
+    from sales s
+    group by 1, 2
+    order by 2, 1
+),
+aggregate_sales as (
+    select c.product_id, p.product_name, c.sale_month, coalesce(sum(s.total_sales), 0) as total_sales
+    from all_combinations c
+        left join all_sales s on c.product_id = s.product_id and c.sale_month = s.sale_month
+        left join products p on c.product_id = p.product_id
+    group by 1, 2, 3
+    order by 3, 1
+)
+select product_id, product_name, sale_month, total_sales,
+       (total_sales-lag(total_sales) over (partition by product_id order by sale_month)) * 100 / NULLIF(lag(total_sales) over (partition by product_id order by sale_month), 0) as pct_change
+from aggregate_sales;
+
+-- 34. Find employees who earn more than the average salary across the company but less than the highest salary in their department.
