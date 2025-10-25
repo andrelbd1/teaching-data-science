@@ -336,3 +336,16 @@ select product_id, product_name, sale_month, total_sales,
 from aggregate_sales;
 
 -- 34. Find employees who earn more than the average salary across the company but less than the highest salary in their department.
+with highest_salary_dpt as (
+    select *
+    from (select row_number() over (partition by department_id order by salary desc ) as "high_rank"
+               , department_id
+               , salary
+            from employees) as sub
+    where high_rank = 1
+)
+select e.*
+from employees e
+    join highest_salary_dpt h on h.department_id = e.department_id and h.salary > e.salary
+where e.salary > (select avg(ee.salary) from employees ee);
+
