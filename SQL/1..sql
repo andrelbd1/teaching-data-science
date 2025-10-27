@@ -349,3 +349,7 @@ from employees e
     join highest_salary_dpt h on h.department_id = e.department_id and h.salary > e.salary
 where e.salary > (select avg(ee.salary) from employees ee);
 
+-- 35. List employees whose names start and end with the same letter.
+select e.*
+from employees e
+where left(e.name, 1) = right(e.name, 1);
